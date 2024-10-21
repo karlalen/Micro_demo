@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "38b9b8d3-4101-4753-a196-5440a613bbe7",
+		"name": "reto01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2669090",
+		"_collection_link": "https://universal-comet-599567.postman.co/workspace/micros_java~5323eb21-15ad-43a2-a5bf-16072d618723/collection/2669090-38b9b8d3-4101-4753-a196-5440a613bbe7?action=share&source=collection_link&creator=2669090"
+	},
+	"item": [
+		{
+			"name": "create new products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"vaso\",\r\n    \"price\":\"20080.50\",\r\n    \"quantity\":10000\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/products/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update products",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"escritorio\",\r\n    \"price\":\"2085.50\",\r\n    \"quantity\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/products/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleted products",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/products/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
